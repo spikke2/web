@@ -143,9 +143,9 @@
     
 }
 
-@media screen and (max-width:440px){
+@media screen and (max-width:600px){
     .container{
-        height: 30px;
+        /* height: 30px; */
         display:grid;
         grid-template-columns: 2fr 1fr;
         align-content: center;
