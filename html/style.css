@@ -1,0 +1,203 @@
+/* contenedor encabezado */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    background: #d4d4d4;
+
+}
+
+
+/* imagen encabezado */
+.contenedor__logo{
+    display: flex;
+    justify-content: center;
+
+}
+.logo__VTR{
+
+    width: 90px;
+    /* height: 80px; */
+    cursor: url("./assets/icon/joystick.png"), auto;
+
+}
+/* lista  encabezado */
+.menu__head{
+    display: flex;
+    justify-content: end;
+    gap: 21px;
+    align-items: center;
+
+}
+/* li */
+.item{
+    list-style: none;
+
+}
+
+/* a */
+.link{
+    color: #8b8b8b;
+    text-decoration: none;
+}
+
+/* barra de busqueda */
+
+/* contenedor del buscador */
+.contenedor__buscador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 8px;
+}
+
+
+
+/* boton lupa */
+.btn__buscar{
+    width: 30px;
+    height: 22px;
+    position: relative;
+    left: 31px;
+    border: none;
+    border-radius: 21px;
+    background-color: #fff;
+
+}
+
+/* logo lupa */
+.img__buscar{
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/icon/icons8-búsqueda-100.svg");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    border: none;
+
+}
+
+/* input */
+.busqueda{
+    width: 200px;
+    height: 26px;
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    text-align: end;
+    border: solid 1px #231;
+    border-radius: 21px;
+}
+.busqueda::placeholder{
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+    text-align: end;
+    color: #bce;
+}
+
+/* contenedor objetos de prueba */
+.div{
+    background-color: #211;
+    display: flex;
+    justify-content: space-around;
+    /* height: 200px;
+    width: 100%; */
+    border: 2px solid #2f2;
+}
+.objeto_p{
+    height: 200px;
+    width: 250px;
+    border: 2px solid #88e;
+    background: #eeb;
+}
+
+/* caja de prueba*/
+.caja_prueba{
+    height: 30px;
+    width: 100vw;
+    background-color: rgba(#fff, #fff, #fff, alpha);
+}
+
+/* diseño responsive */
+@media screen and (max-width:769px){
+    .container{
+        height: 30px;
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        position: fixed;
+        background: none;
+    } 
+    
+    .contenedor__logo{
+        position: fixed;
+        bottom: 10px;
+        right: 16px;
+        
+    }
+    
+    .menu__head{
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        padding: 0 0 0 10px;
+        font-size: 14px;
+        
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    .container{
+        /* height: 30px; */
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        align-content: center;
+        position: fixed;
+        background: none;
+        
+    }
+    
+    .menu__head{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        background-image: url("./assets/icon/joystick.png");
+        background-repeat: no-repeat;
+        background-position: 12px;
+    }
+
+    .item{
+        display: none;
+        position: relative;
+        top: 40px;
+    }
+
+    .menu__head:hover .item{
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+.lista{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    height: 20px;
+    background-image: url("./assets/icon/joystick.png");
+    background-repeat: no-repeat;
+    background-position: 200px;
+    cursor: pointer;
+
+}
+
+.objeto{
+    display: none;
+
+}
+
+.lista:hover .objeto{
+    display: block;
+}
