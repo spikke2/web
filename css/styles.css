@@ -30,6 +30,11 @@ body {
 	/* border: 8px double #c40; */
 }
 
+.link__login{
+	text-decoration: none;
+	color: #e66;
+}
+
 .login:before,
 .login__circuit-mask {
 	content: '';
